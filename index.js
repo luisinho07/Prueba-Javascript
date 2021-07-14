@@ -41,7 +41,58 @@
 //let imc = parseInt(peso)/(parseFloat(estatura)**2);
 //console.log(`Tu BMI es: ${imc}`)
 
+let numero1 = prompt("Digita un número: ");
+if (parseInt(numero1) > 10) {
+  console.log(`${numero1} es mayor a 10`);
+} else {
+  console.log(`${numero1} es menor a 10`)
+}
+
+let aleatorio = parseInt(Math.random()*9);
+let numeroAdivinar = prompt("Digita un número entre 0 y 9 para adivinar: ");
+if (parseInt(numeroAdivinar) === aleatorio) {
+  console.log("Felicitaciones, ese era!");
+} else {
+  console.log(`Lo siento, intenta nuevamente!`)
+}
+
+let multiplo1 = prompt("Digita un número: ");
+if ((parseInt(multiplo1) % 5) == 0) {
+  console.log(`Si, el número ${multiplo1} es multiplo de 5`);
+} else {
+  console.log(`No, el número ${multiplo1} no es multiplo de 5`);
+}
+
 let numero = prompt("Digita un número: ");
-if (parseInt(numero) < 10) {
-  
+if (parseInt(numero) == 10) {
+  console.log("El número es igual a 10");
+} else if (parseInt(numero) > 10) {
+  console.log("El número es mayor a 10");
+} else {
+  console.log("El número es menor a 10");
+}
+
+let peso = prompt("Digita tu peso en kilogramos: ");
+let estatura = prompt("Digita tu estatura en metros: ");
+let imc = parseInt(peso)/(parseFloat(estatura)**2);
+console.log(imc)
+if (imc < 18.5) {
+  console.log("Bajo de peso");
+} else if (imc >= 18.5 && imc <= 24.9){
+  console.log("Normal");
+} else if(imc >= 25 && imc <=29.9) {
+ console.log("Sobrepeso"); 
+} else {
+  console.log("Obeso");
+}
+
+let multiplo = prompt("Digita un número: ");
+if ((parseInt(multiplo) % 3) == 0 && (parseInt(multiplo) % 5) == 0) {
+  console.log("bingbong");
+} else if ((parseInt(multiplo) % 3) == 0){
+  console.log("bing");
+} else if ((parseInt(multiplo) % 5) == 0){
+  console.log("bong");
+} else {
+  console.log(multiplo);
 }
